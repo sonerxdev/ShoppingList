@@ -14,6 +14,7 @@
 		5B95A53127FA07A2005235FE /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B95A52F27FA07A2005235FE /* ShoppingList.xcdatamodeld */; };
 		5B95A53327FA07A6005235FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B95A53227FA07A6005235FE /* Assets.xcassets */; };
 		5B95A53627FA07A6005235FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B95A53427FA07A6005235FE /* LaunchScreen.storyboard */; };
+		5B9B898F27FA0FC900136684 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B898E27FA0FC900136684 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5B95A53227FA07A6005235FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B95A53527FA07A6005235FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B95A53727FA07A6005235FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9B898E27FA0FC900136684 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5B95A52627FA07A2005235FE /* AppDelegate.swift */,
 				5B95A52827FA07A2005235FE /* SceneDelegate.swift */,
 				5B95A52A27FA07A2005235FE /* ViewController.swift */,
+				5B9B898E27FA0FC900136684 /* AddItemViewController.swift */,
 				5B95A52C27FA07A2005235FE /* Main.storyboard */,
 				5B95A53227FA07A6005235FE /* Assets.xcassets */,
 				5B95A53427FA07A6005235FE /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9B898F27FA0FC900136684 /* AddItemViewController.swift in Sources */,
 				5B95A52B27FA07A2005235FE /* ViewController.swift in Sources */,
 				5B95A53127FA07A2005235FE /* ShoppingList.xcdatamodeld in Sources */,
 				5B95A52727FA07A2005235FE /* AppDelegate.swift in Sources */,
