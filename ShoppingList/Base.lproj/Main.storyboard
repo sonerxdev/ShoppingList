@@ -126,6 +126,7 @@
                         <outlet property="imagePriceTxt" destination="lta-BL-OPA" id="hqN-4E-khp"/>
                         <outlet property="imageSizeTxt" destination="fIe-fj-wuq" id="fXm-HS-iRZ"/>
                         <outlet property="imageView" destination="dEv-pf-qiR" id="Lo2-56-jnX"/>
+                        <outlet property="saveButtonVar" destination="wmv-O6-cpi" id="3bs-5E-tjo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1f-Mk-wE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

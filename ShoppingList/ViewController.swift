@@ -124,6 +124,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             context.delete(result)
                             nameArray.remove(at: indexPath.row)
                             idArray.remove(at: indexPath.row)
+                            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+
                             self.tableView.reloadData()
                             
                             do {

@@ -14,6 +14,7 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
  
     @IBOutlet weak var imageNameTxt: UITextField!
     
+    @IBOutlet weak var saveButtonVar: UIButton!
     @IBOutlet weak var imagePriceTxt: UITextField!
     @IBOutlet weak var imageSizeTxt: UITextField!
     @IBOutlet weak var imageView: UIImageView!
@@ -26,6 +27,8 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         
         if selectedItemName != "" {
+            
+            saveButtonVar.isEnabled = false
             
             if let uuidString = selectedItemUUID?.uuidString{
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -69,6 +72,8 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
             
         }
         else {
+            saveButtonVar.isHidden = false
+            saveButtonVar.isEnabled = false
             imageNameTxt.text = ""
             imagePriceTxt.text = ""
             imageSizeTxt.text = ""
@@ -93,6 +98,7 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imageView.image = info[.editedImage] as? UIImage
+        saveButtonVar.isEnabled = true
         self.dismiss(animated: true, completion: nil)
     }
     
