@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-GX-8fO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5I6-5e-dI5">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -24,15 +24,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qJq-GX-8fO" secondAttribute="bottom" id="hu1-bI-VJu"/>
-                            <constraint firstItem="qJq-GX-8fO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oYx-ZS-P5h"/>
-                            <constraint firstItem="qJq-GX-8fO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vIr-Fs-YZB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJq-GX-8fO" secondAttribute="trailing" id="xaa-bB-mMi"/>
+                            <constraint firstItem="5I6-5e-dI5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lqa-2O-A3h"/>
+                            <constraint firstItem="5I6-5e-dI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M3O-9U-8dJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5I6-5e-dI5" secondAttribute="bottom" id="Mpf-lF-kT0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5I6-5e-dI5" secondAttribute="trailing" id="RQa-UO-FSE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dtP-KR-YKi"/>
                     <connections>
-                        <outlet property="tableView" destination="qJq-GX-8fO" id="c3p-LM-Irv"/>
+                        <outlet property="tableView" destination="5I6-5e-dI5" id="8dU-No-zrN"/>
                         <segue destination="5RA-RS-aca" kind="show" identifier="toAddItemVC" id="ECu-Q2-213"/>
                     </connections>
                 </viewController>
@@ -122,10 +122,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="ed8-Aa-ENK"/>
                     <connections>
+                        <outlet property="imageNameTxt" destination="0Oe-8y-0hi" id="rht-Ts-PcS"/>
+                        <outlet property="imagePriceTxt" destination="lta-BL-OPA" id="hqN-4E-khp"/>
+                        <outlet property="imageSizeTxt" destination="fIe-fj-wuq" id="fXm-HS-iRZ"/>
                         <outlet property="imageView" destination="dEv-pf-qiR" id="Lo2-56-jnX"/>
-                        <outlet property="itemNameTxt" destination="0Oe-8y-0hi" id="dIJ-2a-fJh"/>
-                        <outlet property="itemPriceTxt" destination="lta-BL-OPA" id="zYs-b2-oec"/>
-                        <outlet property="itemSizeTxt" destination="fIe-fj-wuq" id="pMa-HV-sGw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1f-Mk-wE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
